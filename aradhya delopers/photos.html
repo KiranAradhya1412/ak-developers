@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photos - Aradhya Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Aradhya Solutions</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section photos-section">
+    <div class="container">
+      <div class="section-header">
+        <h1>Photo Showcase</h1>
+        <p>Take a look at sample visuals that capture our design direction and creative energy.</p>
+      </div>
+      <div class="photo-grid">
+        <div class="photo-card">Brand Photography</div>
+        <div class="photo-card">Workspace Moments</div>
+        <div class="photo-card">Team Collaboration</div>
+        <div class="photo-card">Creative Storytelling</div>
+      </div>
+    </div>
+  </main>
+
+  <button id="assistantToggle" class="assistant-toggle" aria-label="Open assistant chat">Need help?</button>
+  <aside id="assistantPanel" class="assistant-panel hidden" aria-hidden="true">
+    <div class="assistant-header">
+      <div>
+        <h3>Virtual Assistant</h3>
+        <p>Ask about services, courses, photos, or how to contact us.</p>
+      </div>
+      <button id="assistantClose" class="close-button" aria-label="Close assistant">×</button>
+    </div>
+    <div id="assistantMessages" class="assistant-messages" role="log" aria-live="polite"></div>
+    <form id="assistantForm" class="assistant-form">
+      <input id="assistantInput" type="text" placeholder="Type a question..." autocomplete="off" required />
+      <button type="submit" class="button">Send</button>
+    </form>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
