@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Aradhya Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Aradhya Solutions</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="photos.html">Photos</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section services-section">
+    <div class="container">
+      <div class="section-header">
+        <h1>Our Services</h1>
+        <p>We offer a range of services designed to help your brand look great and perform well online.</p>
+      </div>
+      <div class="card-grid">
+        <article class="service-card">
+          <h3>Web Design</h3>
+          <p>Create a strong online presence with a modern design built for desktop and mobile users.</p>
+        </article>
+        <article class="service-card">
+          <h3>Digital Marketing</h3>
+          <p>Grow awareness, attract customers, and increase engagement with targeted campaigns.</p>
+        </article>
+        <article class="service-card">
+          <h3>Photography</h3>
+          <p>Capture your story with polished photos that highlight professionalism and style.</p>
+        </article>
+        <article class="service-card">
+          <h3>Consultation</h3>
+          <p>Get personalized advice on branding, strategy, and next steps for your digital goals.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <button id="assistantToggle" class="assistant-toggle" aria-label="Open assistant chat">Need help?</button>
+  <aside id="assistantPanel" class="assistant-panel hidden" aria-hidden="true">
+    <div class="assistant-header">
+      <div>
+        <h3>Virtual Assistant</h3>
+        <p>Ask about services, courses, photos, or how to contact us.</p>
+      </div>
+      <button id="assistantClose" class="close-button" aria-label="Close assistant">×</button>
+    </div>
+    <div id="assistantMessages" class="assistant-messages" role="log" aria-live="polite"></div>
+    <form id="assistantForm" class="assistant-form">
+      <input id="assistantInput" type="text" placeholder="Type a question..." autocomplete="off" required />
+      <button type="submit" class="button">Send</button>
+    </form>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

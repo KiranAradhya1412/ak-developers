@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses - Aradhya Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Aradhya Solutions</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="photos.html">Photos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section courses-section">
+    <div class="container">
+      <div class="section-header">
+        <h1>Courses</h1>
+        <p>Choose a course to grow your skills in digital marketing, photography, or design fundamentals.</p>
+      </div>
+      <div class="card-grid">
+        <article class="course-card">
+          <h3>Digital Skills Bootcamp</h3>
+          <p>Learn website essentials, online marketing, and content planning in an easy-to-follow format.</p>
+        </article>
+        <article class="course-card">
+          <h3>Photography Fundamentals</h3>
+          <p>Improve your photo quality with practical lessons on composition, lighting, and planning.</p>
+        </article>
+        <article class="course-card">
+          <h3>Design Basics</h3>
+          <p>Build confidence with visual design principles, strong layouts, and brand storytelling.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <button id="assistantToggle" class="assistant-toggle" aria-label="Open assistant chat">Need help?</button>
+  <aside id="assistantPanel" class="assistant-panel hidden" aria-hidden="true">
+    <div class="assistant-header">
+      <div>
+        <h3>Virtual Assistant</h3>
+        <p>Ask about services, courses, photos, or how to contact us.</p>
+      </div>
+      <button id="assistantClose" class="close-button" aria-label="Close assistant">×</button>
+    </div>
+    <div id="assistantMessages" class="assistant-messages" role="log" aria-live="polite"></div>
+    <form id="assistantForm" class="assistant-form">
+      <input id="assistantInput" type="text" placeholder="Type a question..." autocomplete="off" required />
+      <button type="submit" class="button">Send</button>
+    </form>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
